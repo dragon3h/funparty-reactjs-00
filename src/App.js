@@ -1,11 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import MainNavigation from './shared/components/navigation/main-navigation/main-navigation.component';
 import './App.css';
+
 
 function App() {
   return (
-      <div className="App">
-        <h1>Hello Romr!</h1>
+      <div>
+        <MainNavigation />
+        <div className="App" data-test="app-component">
+          <h1>Hello Romr!</h1>
+        </div>
       </div>
   );
 }
