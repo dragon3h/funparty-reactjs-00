@@ -1,17 +1,19 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 import MainNavigation from './shared/components/navigation/main-navigation/main-navigation.component';
 import './App.css';
 
-
 function App() {
   return (
-      <div>
-        <MainNavigation />
-        <div className="App" data-test="app-component">
-          <h1>Hello Romr!</h1>
-        </div>
-      </div>
+      <BrowserRouter data-test="app-component">
+        <MainNavigation/>
+        <Switch>
+          <Route>
+            Home
+          </Route>
+        </Switch>
+      </BrowserRouter>
   );
 }
 
