@@ -16,10 +16,10 @@ const navLinks = () => {
             Dashboard
           </NavLink>
         </li>
-        <li>
-          <button className="nav-links__btn-drpdown">Products
+        <li className="nav-links__dropdown">
+          <div className="nav-links__btn-dropdown">Products
             {/*<FontAwesomeIcon icon={faCaretDown} />*/}
-          </button>
+          </div>
           <div className="nav-links__content">
             <NavLink to="/products">All Products</NavLink>
             <NavLink to="/products/bouncy-castles">Bouncy Castles</NavLink>

@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 import MainNavigation from './shared/components/navigation/main-navigation/main-navigation.component';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
