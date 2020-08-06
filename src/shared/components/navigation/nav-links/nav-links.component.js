@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 import './nav-links.style.scss';
 
@@ -9,17 +9,24 @@ const navLinks = () => {
         <li>
           <NavLink to='/' exact>
             Home
-        </NavLink>
+          </NavLink>
         </li>
         <li>
           <NavLink to='/dashboard'>
             Dashboard
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/projects' exact>
-            Products
-          </NavLink>
+          <button className="nav-links__btn-drpdown">Products
+            {/*<FontAwesomeIcon icon={faCaretDown} />*/}
+          </button>
+          <div className="nav-links__content">
+            <NavLink to="/products">All Products</NavLink>
+            <NavLink to="/products/bouncy-castles">Bouncy Castles</NavLink>
+            <NavLink to="/products/mascots">Mascots</NavLink>
+            <NavLink to="/products/games">Games</NavLink>
+            <NavLink to="/products/food-machines">Food Machines</NavLink>
+          </div>
         </li>
         <li>
           <NavLink to='/schedule'>
